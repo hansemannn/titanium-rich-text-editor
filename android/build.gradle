@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+    compile 'jp.wasabeef:richeditor-android:1.2.2'
+}
+
+task getDeps(type: Copy) {
+	from sourceSets.main.runtimeClasspath
+	exclude 'support-*'
+	into 'lib/'
+}

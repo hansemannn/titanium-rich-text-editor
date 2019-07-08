@@ -1,0 +1,11 @@
+framework module RichEditorView {
+  umbrella header "RichEditorView-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module RichEditorView.Swift {
+    header "RichEditorView-Swift.h"
+    requires objc
+}
