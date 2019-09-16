@@ -13,8 +13,11 @@ import org.appcelerator.kroll.KrollProxy;
 import org.appcelerator.kroll.common.TiConfig;
 import org.appcelerator.titanium.proxy.TiViewProxy;
 import org.appcelerator.titanium.view.TiUIView;
-import android.app.Activity;
+import org.appcelerator.titanium.TiApplication;
 
+import android.app.Activity;
+import android.view.inputmethod.InputMethodManager;
+import android.content.Context;
 import jp.wasabeef.richeditor.RichEditor;
 
 public class EditorView extends TiUIView
@@ -70,6 +73,11 @@ public class EditorView extends TiUIView
 
 	public void focus() {
 		editorView.focusEditor();
+
+		Activity currentActivity = TiApplication.getAppCurrentActivity();
+		InputMethodManager imm = (InputMethodManager) currentActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
+
+		imm.toggleSoftInputFromWindow(editorView.getWindowToken(), InputMethodManager.SHOW_IMPLICIT, 0);
 	}
 
 	public void blur() {
