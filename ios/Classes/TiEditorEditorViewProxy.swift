@@ -14,6 +14,8 @@ public class TiEditorEditorViewProxy : TiViewProxy {
     return self.view as! TiEditorEditorView
   }()
   
+  open var backgroundColor: Any?
+  
   private var _content: String?
   @objc var content: String {
     get { return self.editorView.editorView.html }
@@ -51,8 +53,13 @@ public class TiEditorEditorViewProxy : TiViewProxy {
   }
   
   @objc(setColor:)
-  func setColor(content: String) {
+  func setColor(content: Any) {
     self.editorView.editorView.setTextColor(TiUtils.colorValue(content)!.color)
+  }
+  
+  @objc(setEditorBackgroundColor:)
+  func setEditorBackgroundColor(content: Any) {
+    backgroundColor = content
   }
   
   @objc(focus:)

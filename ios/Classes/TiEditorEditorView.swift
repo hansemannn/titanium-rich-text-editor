@@ -49,6 +49,12 @@ public class TiEditorEditorView : TiUIView {
 
 extension TiEditorEditorView : RichEditorDelegate {
   
+  public func richEditorDidLoad(_ editor: RichEditorView) {
+    if let editorProxy = self.proxy as? TiEditorEditorViewProxy, let backgroundColor = editorProxy.backgroundColor {
+      editorView.setEditorBackgroundColor(TiUtils.colorValue(backgroundColor)!.color)
+    }
+  }
+
   public func richEditor(_ editor: RichEditorView, contentDidChange content: String) {
     self.proxy.fireEvent("change", with: ["value": content])
   }
