@@ -147,7 +147,7 @@ import UIKit
         webView.scrollView.bounces = false
         webView.scrollView.delegate = self
         webView.scrollView.clipsToBounds = false
-        
+
         webView.cjw_inputAccessoryView = nil
         
         self.addSubview(webView)
@@ -232,6 +232,9 @@ import UIKit
     }
     
     public func setEditorBackgroundColor(_ color: UIColor) {
+        webView.backgroundColor = color
+        webView.scrollView.backgroundColor = color
+
         runJS("RE.setBackgroundColor('\(color.hex)');")
     }
     
