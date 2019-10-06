@@ -36,10 +36,20 @@ public class EditorView extends TiUIView
 
 		editorView = new RichEditor(mActivity);
 
+		editorView.setOnInitialLoadListener(new RichEditor.AfterInitialLoadListener() {
+			@Override public void onAfterInitialLoad(boolean isReady) {
+				KrollDict event = new KrollDict();
+				event.put("isReady", isReady);
+
+				viewProxy.fireEvent("load", event);
+			}
+		});
+
 		editorView.setOnTextChangeListener(new RichEditor.OnTextChangeListener() {
 			@Override public void onTextChange(String text) {
 				KrollDict event = new KrollDict();
 				event.put("value", text);
+
 				viewProxy.fireEvent("change", event);
 			}
 		});
