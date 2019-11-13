@@ -18,6 +18,7 @@ import org.appcelerator.titanium.TiApplication;
 import android.app.Activity;
 import android.view.inputmethod.InputMethodManager;
 import android.content.Context;
+import android.graphics.Color;
 import jp.wasabeef.richeditor.RichEditor;
 
 public class EditorView extends TiUIView
@@ -35,7 +36,7 @@ public class EditorView extends TiUIView
 		final TiViewProxy viewProxy = proxy;
 
 		editorView = new RichEditor(mActivity);
-
+		
 		editorView.setOnInitialLoadListener(new RichEditor.AfterInitialLoadListener() {
 			@Override public void onAfterInitialLoad(boolean isReady) {
 				KrollDict event = new KrollDict();
@@ -54,6 +55,7 @@ public class EditorView extends TiUIView
 			}
 		});
 
+		setEditorColors();
 		setNativeView(editorView);
 	}
 
@@ -76,6 +78,14 @@ public class EditorView extends TiUIView
 	}
 
 	/** General API's **/
+	
+	public void setEditorColors() {
+		int fontColor = Utils.getColor("tieditor_fontColor");
+		
+		if (fontColor != -1) {
+			editorView.setEditorFontColor(fontColor);
+		}
+	}
 
 	public void setContent(String content) {
 		editorView.setHtml(content);
