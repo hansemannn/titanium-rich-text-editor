@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A7841A222593FF00016ED81 /* RichEditorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7841A122593FF00016ED81 /* RichEditorView.framework */; };
+		3A7801C023C0ECB300EC3366 /* Aztec.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7801BF23C0ECB300EC3366 /* Aztec.framework */; };
+		3A7801C223C0ED5700EC3366 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7801C123C0ED5700EC3366 /* libxml2.tbd */; };
+		3A7801CD23C0F9FF00EC3366 /* Gridicons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7801CC23C0F9FE00EC3366 /* Gridicons.framework */; };
 		3A7841A4225940030016ED81 /* TiEditorEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7841A3225940030016ED81 /* TiEditorEditorView.swift */; };
 		3A7841A62259400D0016ED81 /* TiEditorEditorViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7841A52259400D0016ED81 /* TiEditorEditorViewProxy.swift */; };
 		DB34CDE0207B998A005F8E8C /* TiEditorModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34CDDE207B998A005F8E8C /* TiEditorModuleAssets.m */; };
@@ -20,7 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A7841A122593FF00016ED81 /* RichEditorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RichEditorView.framework; path = platform/RichEditorView.framework; sourceTree = "<group>"; };
+		3A7801BF23C0ECB300EC3366 /* Aztec.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Aztec.framework; path = platform/Aztec.framework; sourceTree = "<group>"; };
+		3A7801C123C0ED5700EC3366 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
+		3A7801CC23C0F9FE00EC3366 /* Gridicons.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gridicons.framework; path = platform/Gridicons.framework; sourceTree = "<group>"; };
 		3A7841A3225940030016ED81 /* TiEditorEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TiEditorEditorView.swift; path = Classes/TiEditorEditorView.swift; sourceTree = "<group>"; };
 		3A7841A52259400D0016ED81 /* TiEditorEditorViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TiEditorEditorViewProxy.swift; path = Classes/TiEditorEditorViewProxy.swift; sourceTree = "<group>"; };
 		DB34CDDE207B998A005F8E8C /* TiEditorModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiEditorModuleAssets.m; path = Classes/TiEditorModuleAssets.m; sourceTree = SOURCE_ROOT; };
@@ -39,8 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7841A222593FF00016ED81 /* RichEditorView.framework in Frameworks */,
+				3A7801C223C0ED5700EC3366 /* libxml2.tbd in Frameworks */,
 				DBB66221208481A800EAD6D9 /* TitaniumKit.framework in Frameworks */,
+				3A7801C023C0ECB300EC3366 /* Aztec.framework in Frameworks */,
+				3A7801CD23C0F9FF00EC3366 /* Gridicons.framework in Frameworks */,
 				DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +88,9 @@
 		DB34CDE2207B9D6A005F8E8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3A7841A122593FF00016ED81 /* RichEditorView.framework */,
+				3A7801C123C0ED5700EC3366 /* libxml2.tbd */,
+				3A7801CC23C0F9FE00EC3366 /* Gridicons.framework */,
+				3A7801BF23C0ECB300EC3366 /* Aztec.framework */,
 				DB34CDE5207B9EBD005F8E8C /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -278,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -339,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -374,7 +382,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
@@ -417,7 +425,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
