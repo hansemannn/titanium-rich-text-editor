@@ -194,7 +194,7 @@ extension TiEditorEditorView {
   
   func createToolbar() -> Aztec.FormatBar {
       let scrollableItems = scrollableItemsForToolbar
-      // let overflowItems = overflowItemsForToolbar
+      let overflowItems = overflowItemsForToolbar
 
       let toolbar = Aztec.FormatBar()
 
@@ -214,12 +214,11 @@ extension TiEditorEditorView {
       }
 
       toolbar.overflowToggleIcon = Gridicon.iconOfType(.ellipsis)
-      toolbar.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: 44.0)
+      toolbar.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44.0)
       toolbar.autoresizingMask = [ .flexibleHeight ]
       toolbar.formatter = self
 
-      toolbar.setDefaultItems(scrollableItems,
-                              overflowItems: []/*overflowItems*/)
+      toolbar.setDefaultItems(scrollableItems, overflowItems: overflowItems)
 
       toolbar.barItemHandler = { [weak self] item in
           self?.handleAction(for: item)
@@ -250,22 +249,17 @@ extension TiEditorEditorView {
       return [
           headerButton,
           listButton,
-          makeToolbarButton(identifier: .blockquote),
           makeToolbarButton(identifier: .bold),
           makeToolbarButton(identifier: .italic),
+          makeToolbarButton(identifier: .link),
           makeToolbarButton(identifier: .underline),
-          makeToolbarButton(identifier: .strikethrough),
-          makeToolbarButton(identifier: .link)
+          makeToolbarButton(identifier: .strikethrough)
       ]
   }
 
   // Unused right now
   var overflowItemsForToolbar: [FormatBarItem] {
-      return [
-          makeToolbarButton(identifier: .underline),
-          makeToolbarButton(identifier: .strikethrough),
-          makeToolbarButton(identifier: .more)
-      ]
+      return []
   }
 }
 
@@ -528,6 +522,5 @@ extension FormattingIdentifier {
         default:
             return ""
         }
-
     }
 }
