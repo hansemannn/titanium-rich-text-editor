@@ -1,15 +1,23 @@
 apply plugin: 'java'
+apply plugin: 'java-library'
 
 repositories {
-	jcenter()
+    google()
+    jcenter()
+    mavenCentral()
+    maven { url "https://jitpack.io" }
 }
 
 dependencies {
-    compile 'jp.wasabeef:richeditor-android:1.2.2'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    api ('com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:v1.3.37')
+}
+
+configurations.all {
+  transitive = true
 }
 
 task getDeps(type: Copy) {
-	from sourceSets.main.runtimeClasspath
-	exclude 'support-*'
-	into 'lib/'
+    from sourceSets.main.runtimeClasspath
+    into 'lib/'
 }

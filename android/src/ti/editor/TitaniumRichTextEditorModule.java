@@ -11,20 +11,11 @@ package ti.editor;
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
 
-import org.appcelerator.titanium.TiApplication;
-import org.appcelerator.kroll.common.Log;
-import org.appcelerator.kroll.common.TiConfig;
 
 @Kroll.module(name="TitaniumRichTextEditor", id="ti.editor")
-public class TitaniumRichTextEditorModule extends KrollModule
-{
+public class TitaniumRichTextEditorModule extends KrollModule {
 
-	// Standard Debugging variables
-	private static final String LCAT = "TitaniumRichTextEditorModule";
-	private static final boolean DBG = TiConfig.LOGD;
-
-	public TitaniumRichTextEditorModule()
-	{
+	public TitaniumRichTextEditorModule() {
 		super();
 	}
 }

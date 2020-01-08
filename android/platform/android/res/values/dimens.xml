@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<item type="bool" name="tieditor_history_enabled">true</item>
+	<item type="integer" name="tieditor_history_size">10</item>
+	<item type="dimen" name="tieditor_toolbar_height">50dp</item>
+</resources>
