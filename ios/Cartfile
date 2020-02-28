@@ -1,1 +1,2 @@
-github "hansemannn/RichEditorView" ~> 6.0.1
+github "hansemannn/AztecEditor-iOS" "1.14.2"
+github "Automattic/Gridicons-iOS" "0.18"

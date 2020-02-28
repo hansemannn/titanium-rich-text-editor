@@ -1,0 +1,11 @@
+framework module Gridicons {
+  umbrella header "Gridicons.h"
+
+  export *
+  module * { export * }
+}
+
+module Gridicons.Swift {
+    header "Gridicons-Swift.h"
+    requires objc
+}

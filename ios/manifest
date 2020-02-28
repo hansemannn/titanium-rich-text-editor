@@ -2,17 +2,17 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 2.0.0
 apiversion: 2
 architectures: armv7 arm64 i386 x86_64
 description: titanium-rich-text-editor is a Swift based Titanium module.
-author: Your Name
-license: Specify your license
-copyright: Copyright (c) 2019 by Your Company
+author: Hans Knöchel
+license: MIT
+copyright: Copyright (c) 2019 by Hans Knöchel
 
 # these should not be edited
 name: titanium-rich-text-editor
 moduleid: ti.editor
 guid: 5c9f58be-3431-4760-bc22-d6e5c699d843
 platform: iphone
-minsdk: 8.1.0
+minsdk: 8.3.0.GA
