@@ -17,6 +17,7 @@ public class TiEditorEditorView : TiUIView {
 
     editor.formattingDelegate = self
     editor.delegate = self
+    editor.textAttachmentDelegate = self
     editor.textContainer.lineFragmentPadding = 0
 
     let providers: [TextViewAttachmentImageProvider] = [
@@ -271,6 +272,37 @@ extension TiEditorEditorView : TextViewFormattingDelegate {
     proxy.fireEvent("toggle")
   }
 }
+
+// MARK: TextViewAttachmentDelegate
+
+extension TiEditorEditorView : TextViewAttachmentDelegate {
+
+  public func textView(_ textView: TextView, attachment: NSTextAttachment, imageAt url: URL, onSuccess success: @escaping (UIImage) -> Void, onFailure failure: @escaping () -> Void) {
+    
+  }
+  
+  public func textView(_ textView: TextView, urlFor imageAttachment: ImageAttachment) -> URL? {
+    return imageAttachment.url
+  }
+  
+  public func textView(_ textView: TextView, placeholderFor attachment: NSTextAttachment) -> UIImage {
+    attachment.image ?? UIImage()
+  }
+  
+  public func textView(_ textView: TextView, deletedAttachment attachment: MediaAttachment) {
+    
+  }
+  
+  public func textView(_ textView: TextView, selected attachment: NSTextAttachment, atPosition position: CGPoint) {
+    
+  }
+  
+  public func textView(_ textView: TextView, deselected attachment: NSTextAttachment, atPosition position: CGPoint) {
+    
+  }
+}
+
+// MARK: FormatBarDelegate
 
 extension TiEditorEditorView : FormatBarDelegate {
   

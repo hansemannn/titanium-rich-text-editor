@@ -21,7 +21,7 @@ function init(logger, config, cli, appc) {
 															
 			Object.keys(xobjs.PBXNativeTarget).forEach(function (targetUuid) {
 				var target = xobjs.PBXNativeTarget[targetUuid];
-				if (target && typeof target === 'object') {
+				if (target && typeof target === 'object' && target.productType === '"com.apple.product-type.application"') {
 					xobjs.XCConfigurationList[target.buildConfigurationList].buildConfigurations.forEach(function (buildConf) {
 						var buildSettings = xobjs.XCBuildConfiguration[buildConf.value].buildSettings;
 						buildSettings.ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = 'YES';
