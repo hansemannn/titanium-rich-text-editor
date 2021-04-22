@@ -1,4 +1,0 @@
-framework module Aztec {
-  header "Aztec-Swift.h"
-  requires objc
-}
