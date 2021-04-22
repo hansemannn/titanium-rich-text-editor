@@ -4,9 +4,6 @@ import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.titanium.util.TiRHelper;
 
 import android.content.Context;
-import android.os.Build;
-import android.support.v4.content.ContextCompat;
-
 
 public class Utils {
 	public static int getR(String path) {
