@@ -128,6 +128,11 @@ public class EditorViewProxy extends TiViewProxy
 		getView().setActionToggleRight();
 	}
 
+	@Kroll.method
+	public void insertLink(String link, String name) {
+		getView().setActionInsertLink(link, name);
+	}
+
 	@Kroll.setProperty
 	public void setHintText(String hintText) {
 		getView().setHintText(hintText);

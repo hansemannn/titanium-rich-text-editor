@@ -18,14 +18,10 @@ import org.appcelerator.titanium.TiApplication;
 import android.app.Activity;
 import android.view.inputmethod.InputMethodManager;
 import android.content.Context;
-import android.graphics.Color;
 import jp.wasabeef.richeditor.RichEditor;
 
 public class EditorView extends TiUIView
 {
-	private static final String LCAT = "EditorView";
-	private static final boolean DBG = TiConfig.LOGD;
-
 	private RichEditor editorView;
 
 	public EditorView(TiViewProxy proxy)
@@ -140,6 +136,10 @@ public class EditorView extends TiUIView
 
 	public void setActionToggleRight() {
 		editorView.setAlignRight();
+	}
+
+	public void setActionInsertLink(String link, String name) {
+		editorView.insertLink(link, name);
 	}
 
     public void setHintText(String hintText) {
