@@ -252,7 +252,7 @@ extension TiEditorEditorView {
           listButton,
           makeToolbarButton(identifier: .bold),
           makeToolbarButton(identifier: .italic),
-          makeToolbarButton(identifier: .link),
+          // makeToolbarButton(identifier: .link),
           makeToolbarButton(identifier: .underline),
           makeToolbarButton(identifier: .strikethrough)
       ]
