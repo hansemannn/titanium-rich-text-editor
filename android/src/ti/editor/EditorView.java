@@ -16,6 +16,7 @@ import org.appcelerator.titanium.view.TiUIView;
 import org.appcelerator.titanium.TiApplication;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
@@ -25,6 +26,8 @@ import android.text.InputType;
 import android.text.TextWatcher;
 
 
+import androidx.annotation.NonNull;
+
 import org.wordpress.aztec.Aztec;
 import org.wordpress.aztec.AztecText;
 import org.wordpress.aztec.ITextFormat;
@@ -32,7 +35,7 @@ import org.wordpress.aztec.toolbar.AztecToolbar;
 import org.wordpress.aztec.toolbar.IAztecToolbarClickListener;
 
 
-public class EditorView extends TiUIView implements IAztecToolbarClickListener, TextWatcher {
+public class EditorView extends TiUIView implements IAztecToolbarClickListener, TextWatcher, AztecText.OnLinkTappedListener {
 	
 	private AztecText aztecEditorView;
 	private AztecToolbar aztecToolbar;
@@ -46,7 +49,6 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		viewProxy = proxy;
 		
 		setupAztecEditor();
-		
 		setNativeView(mainLayout);
 	}
 	
@@ -55,14 +57,16 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		
 		mainLayout = (FrameLayout) inflater.inflate(Utils.getR("layout.main_layout"), null, false);
 		
-		layoutContainer = (RelativeLayout) mainLayout.findViewById(Utils.getR("id.layout_container"));
-		aztecEditorView = (AztecText) mainLayout.findViewById(Utils.getR("id.editor_textview"));
-		aztecToolbar = (AztecToolbar) mainLayout.findViewById(Utils.getR("id.editor_toolbar"));
+		layoutContainer = mainLayout.findViewById(Utils.getR("id.layout_container"));
+		aztecEditorView = mainLayout.findViewById(Utils.getR("id.editor_textview"));
+		aztecToolbar = mainLayout.findViewById(Utils.getR("id.editor_toolbar"));
 		
 		setupColors();
 		
 		aztecEditorView.addTextChangedListener(this);
-		
+		aztecEditorView.setOnLinkTappedListener(this);
+		aztecEditorView.setLinkTapEnabled(true);
+
 		Aztec.with(aztecEditorView, aztecToolbar, this);
 	}
 	
@@ -226,4 +230,11 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
     		}
     	}
     }
+
+	@Override
+	public void onLinkTapped(@NonNull View view, @NonNull String url) {
+		KrollDict event = new KrollDict();
+		event.put("url", url);
+		viewProxy.fireEvent("link", event);
+	}
 }
