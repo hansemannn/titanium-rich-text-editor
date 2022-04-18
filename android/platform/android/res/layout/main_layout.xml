@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aztec="http://schemas.android.com/apk/res-auto"
+    style="@style/fullWidthHeight">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/fullWidthHeight"
+        android:id="@+id/layout_container"
+        android:background="@color/tieditor_editorBackgroundColor"
+        android:animateLayoutChanges="true">
+
+        <org.wordpress.aztec.AztecText
+            style="@style/fullWidthHeight"
+            android:id="@+id/editor_textview"
+            android:layout_alignParentTop="true"
+            android:padding="20dp"
+            android:gravity="top|start"
+            android:layout_above="@+id/editor_toolbar"
+            android:scrollbars="vertical"
+            android:imeOptions="flagNoExtractUi"
+            aztec:historyEnable="@bool/tieditor_history_enabled"
+            aztec:historySize="@integer/tieditor_history_size" />
+
+        <org.wordpress.aztec.toolbar.AztecToolbar
+            android:id="@+id/editor_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tieditor_toolbar_height"
+            android:layout_alignParentBottom="true"
+            aztec:mediaToolbarAvailable="false" />
+    </RelativeLayout>
+</FrameLayout>

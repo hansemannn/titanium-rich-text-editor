@@ -10,139 +10,220 @@ package ti.editor;
 
 import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollProxy;
-import org.appcelerator.kroll.common.TiConfig;
 import org.appcelerator.titanium.proxy.TiViewProxy;
+import org.appcelerator.titanium.util.TiConvert;
 import org.appcelerator.titanium.view.TiUIView;
 import org.appcelerator.titanium.TiApplication;
 
-import android.app.Activity;
+import android.view.LayoutInflater;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import android.content.Context;
-import jp.wasabeef.richeditor.RichEditor;
+import android.text.Editable;
+import android.text.InputType;
+import android.text.TextWatcher;
 
-public class EditorView extends TiUIView
-{
-	private RichEditor editorView;
 
-	public EditorView(TiViewProxy proxy)
-	{
+import org.wordpress.aztec.Aztec;
+import org.wordpress.aztec.AztecText;
+import org.wordpress.aztec.ITextFormat;
+import org.wordpress.aztec.toolbar.AztecToolbar;
+import org.wordpress.aztec.toolbar.IAztecToolbarClickListener;
+
+
+public class EditorView extends TiUIView implements IAztecToolbarClickListener, TextWatcher {
+	
+	private AztecText aztecEditorView;
+	private AztecToolbar aztecToolbar;
+	private FrameLayout mainLayout;
+	private RelativeLayout layoutContainer;
+	private final TiViewProxy viewProxy;
+
+	public EditorView(TiViewProxy proxy) {
 		super(proxy);
-
-		final Activity mActivity = proxy.getActivity();
-		final TiViewProxy viewProxy = proxy;
-
-		editorView = new RichEditor(mActivity);
 		
-		editorView.setOnInitialLoadListener(new RichEditor.AfterInitialLoadListener() {
-			@Override public void onAfterInitialLoad(boolean isReady) {
-				KrollDict event = new KrollDict();
-				event.put("isReady", isReady);
-
-				viewProxy.fireEvent("load", event);
-			}
-		});
-
-		editorView.setOnTextChangeListener(new RichEditor.OnTextChangeListener() {
-			@Override public void onTextChange(String text) {
-				KrollDict event = new KrollDict();
-				event.put("value", text);
-
-				viewProxy.fireEvent("change", event);
-			}
-		});
-
-		setEditorColors();
-		setNativeView(editorView);
+		viewProxy = proxy;
+		
+		setupAztecEditor();
+		
+		setNativeView(mainLayout);
 	}
+	
+	private void setupAztecEditor() {
+		LayoutInflater inflater = LayoutInflater.from(viewProxy.getActivity());
+		
+		mainLayout = (FrameLayout) inflater.inflate(Utils.getR("layout.main_layout"), null, false);
+		
+		layoutContainer = (RelativeLayout) mainLayout.findViewById(Utils.getR("id.layout_container"));
+		aztecEditorView = (AztecText) mainLayout.findViewById(Utils.getR("id.editor_textview"));
+		aztecToolbar = (AztecToolbar) mainLayout.findViewById(Utils.getR("id.editor_toolbar"));
+		
+		setupColors();
+		
+		aztecEditorView.addTextChangedListener(this);
+		
+		Aztec.with(aztecEditorView, aztecToolbar, this);
+	}
+	
+	private void setupColors() {
+		int fontColor = Utils.getColor("tieditor_fontColor");
+		if (fontColor != -1) {
+			aztecEditorView.setTextColor(fontColor);
+		}
+		
+		int hintFontColor = Utils.getColor("tieditor_hintColor");
+		if (hintFontColor != -1) {
+			aztecEditorView.setHintTextColor(hintFontColor);
+		}
 
-	@Override
-	public void processProperties(KrollDict d)
-	{
-		super.processProperties(d);
-
-		if (d.containsKey("content")) {
-			setContent(d.getString("content"));
+		int bgColor = Utils.getColor("tieditor_editorBackgroundColor");
+		if (bgColor != -1) {
+			layoutContainer.setBackgroundColor(hintFontColor);
 		}
 	}
 
 	@Override
-	public void propertyChanged(String key, Object oldValue, Object newValue, KrollProxy proxy)
-	{
+	public void processProperties(KrollDict d) {
+		super.processProperties(d);
+
+		if (d.containsKey("content")) {
+			setContent(d.getString("content"));
+			
+		} else if (d.containsKey("hintText")) {
+			setHintText(d.getString("hintText"));
+			
+		} else if (d.containsKey("editable")) {
+			setEditable(d.getBoolean("editable"));
+			
+		} else if (d.containsKey("color")) {
+			setColor(d.get("color"));
+			
+		}  else if (d.containsKey("editorBackgroundColor")) {
+			setEditorBackgroundColor(d.get("editorBackgroundColor"));
+		}
+	}
+
+	@Override
+	public void propertyChanged(String key, Object oldValue, Object newValue, KrollProxy proxy) {
 		KrollDict d = new KrollDict();
 		d.put(key, newValue);
 		processProperties(d);
 	}
 
-	/** General API's **/
+	@Override
+	public void beforeTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {}
+
+	@Override
+	public void onTextChanged(CharSequence arg0, int arg1, int arg2, int arg3) {}
 	
-	public void setEditorColors() {
-		int fontColor = Utils.getColor("tieditor_fontColor");
-		
-		if (fontColor != -1) {
-			editorView.setEditorFontColor(fontColor);
-		}
+	@Override
+	public void afterTextChanged(Editable arg0) {
+		fireChangeEvent();
 	}
 
-	public void setContent(String content) {
-		editorView.setHtml(content);
+    @Override
+    public void onToolbarCollapseButtonClicked() {}
+
+    @Override
+    public void onToolbarExpandButtonClicked() {}
+
+    @Override
+    public void onToolbarHeadingButtonClicked() {}
+
+    @Override
+    public void onToolbarHtmlButtonClicked() {}
+
+    @Override
+    public void onToolbarListButtonClicked() {}
+
+    @Override
+    public boolean onToolbarMediaButtonClicked() {
+        return false;
+    }
+    
+    @Override
+    public void onToolbarFormatButtonClicked(ITextFormat iTextFormat, boolean b) {
+    	// FIXME: need to implement a proper text-change listener rather than delaying the thread
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(1000);
+                    fireChangeEvent();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+    
+    /** General API's **/
+    private void fireChangeEvent() {
+    	KrollDict event = new KrollDict();
+		event.put("value", aztecEditorView.toFormattedHtml());
+		viewProxy.fireEvent("change", event);
 	}
-
-	public void focus() {
-		editorView.focusEditor();
-
-		Activity currentActivity = TiApplication.getAppCurrentActivity();
-		InputMethodManager imm = (InputMethodManager) currentActivity.getSystemService(Context.INPUT_METHOD_SERVICE);
-
-		imm.toggleSoftInputFromWindow(editorView.getWindowToken(), InputMethodManager.SHOW_IMPLICIT, 0);
+    
+    public void focus() {
+		aztecEditorView.requestFocus();
+		InputMethodManager imm = (InputMethodManager) TiApplication.getAppCurrentActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+		imm.toggleSoftInputFromWindow(aztecEditorView.getWindowToken(), InputMethodManager.SHOW_IMPLICIT, 0);
 	}
 
 	public void blur() {
-		editorView.clearFocusEditor();
+		aztecEditorView.clearFocus();
+        InputMethodManager inputManager = (InputMethodManager) TiApplication.getAppCurrentActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.hideSoftInputFromWindow(aztecEditorView.getWindowToken(), 0);
+	}
+    
+    public String getContent() {
+		return aztecEditorView.toFormattedHtml();
 	}
 
-	public String getContent() {
-		return editorView.getHtml();
-	}
-
-	/** Actions **/
-
-	public void makeBold() {
-		editorView.setBold();
-	}
-
-	public void makeUnderline() {
-		editorView.setUnderline();
-	}
-
-	public void makeStrikeThrough() {
-		editorView.setStrikeThrough();
-	}
-
-	public void makeOrderedList() {
-		editorView.setNumbers();
-	}
-
-	public void makeUnorderedList() {
-		editorView.setBullets();
-	}
-
-	public void setActionToggleLeft() {
-		editorView.setAlignLeft();
-	}
-
-	public void setActionToggleCenter() {
-		editorView.setAlignCenter();
-	}
-
-	public void setActionToggleRight() {
-		editorView.setAlignRight();
-	}
-
-	public void setActionInsertLink(String link, String name) {
-		editorView.insertLink(link, name);
+	public void setContent(String content) {
+        aztecEditorView.fromHtml(content, false);
 	}
 
     public void setHintText(String hintText) {
-		editorView.setPlaceholder(hintText);
+    	aztecEditorView.setHint(hintText);
+    }
+    
+    public String getHintText() {
+    	return aztecEditorView.getHint().toString();
+    }
+    
+    public void setEditable(boolean editable) {
+    	if (editable) {
+    		aztecEditorView.setInputType(InputType.TYPE_CLASS_TEXT);
+    	} else {
+    		aztecEditorView.setInputType(InputType.TYPE_NULL);
+    	}
+    	
+    	aztecEditorView.setEnabled(editable);
+    }
+    
+    public boolean getEditable() {
+    	return aztecEditorView.isEnabled();
+    }
+    
+    public void setColor(Object color) {
+    	if (color != null) {
+    		String colorString = color.toString();
+    		
+    		if (!colorString.isEmpty()) {
+    			aztecEditorView.setTextColor( TiConvert.toColor(colorString) );
+    		}
+    	}
+    }
+
+    public void setEditorBackgroundColor(Object color) {
+    	if (color != null) {
+    		String colorString = color.toString();
+    		
+    		if (!colorString.isEmpty()) {
+    			layoutContainer.setBackgroundColor( TiConvert.toColor(colorString) );
+    		}
+    	}
     }
 }

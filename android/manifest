@@ -2,7 +2,7 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 2.0.1
+version: 3.0.0
 apiversion: 4
 architectures: arm64-v8a armeabi-v7a x86 x86_64
 description: titanium-rich-text-editor
@@ -13,6 +13,6 @@ copyright: Copyright (c) 2019-present Hans Knöchel
 # these should not be edited
 name: titanium-rich-text-editor
 moduleid: ti.editor
-guid: 7329bee4-97fc-4fd4-a6cb-6dcb6311c4d9
+guid: 74fe92e1-baef-4d7a-95af-a862ce36a730
 platform: android
 minsdk: 9.0.0

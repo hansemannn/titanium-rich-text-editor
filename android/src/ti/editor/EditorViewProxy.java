@@ -10,7 +10,6 @@ package ti.editor;
 
 import org.appcelerator.kroll.KrollProxy;
 import org.appcelerator.kroll.annotations.Kroll;
-import org.appcelerator.kroll.common.TiConfig;
 import org.appcelerator.titanium.proxy.TiViewProxy;
 import org.appcelerator.titanium.view.TiUIView;
 import android.app.Activity;
@@ -18,24 +17,12 @@ import android.os.Message;
 import org.appcelerator.kroll.common.AsyncResult;
 
 @Kroll.proxy(creatableInModule = TitaniumRichTextEditorModule.class)
-public class EditorViewProxy extends TiViewProxy
-{
-	// Standard Debugging variables
-	private static final String LCAT = "EditorViewProxy";
-	private static final boolean DBG = TiConfig.LOGD;
-
+public class EditorViewProxy extends TiViewProxy {
 	protected static final int MSG_BLUR = KrollProxy.MSG_LAST_ID + 101;
 	protected static final int MSG_FOCUS = KrollProxy.MSG_LAST_ID + 102;
 
-	// Constructor
-	public EditorViewProxy()
-	{
-		super();
-	}
-
 	@Override
-	public TiUIView createView(Activity activity)
-	{
+	public TiUIView createView(Activity activity) {
 		TiUIView view = new EditorView(this);
 
 		view.getLayoutParams().autoFillsHeight = true;
@@ -43,14 +30,14 @@ public class EditorViewProxy extends TiViewProxy
 
 		return view;
 	}
-	protected EditorView getView()
-	{
+	
+	protected EditorView getView() {
 		return (EditorView) getOrCreateView();
 	}
 
-	public boolean handleMessage(Message message)
-	{
+	public boolean handleMessage(Message message) {
 		AsyncResult result;
+		
 		switch (message.what) {
 			case MSG_BLUR: {
 				result = (AsyncResult) message.obj;
@@ -69,16 +56,6 @@ public class EditorViewProxy extends TiViewProxy
 		return super.handleMessage(message);
 	}
 
-	@Kroll.setProperty
-	public void setContent(String content) {
-		getView().setContent(content);
-	}
-
-	@Kroll.getProperty
-	public String getContent() {
-		return getView().getContent();
-	}
-
 	@Kroll.method
 	public void focus() {
 		getView().focus();
@@ -89,52 +66,43 @@ public class EditorViewProxy extends TiViewProxy
 		getView().blur();
 	}
 
-	@Kroll.method
-	public void makeBold() {
-		getView().makeBold();
-	}
-
-	@Kroll.method
-	public void makeUnderline() {
-		getView().makeUnderline();
-	}
-
-	@Kroll.method
-	public void makeStrikeThrough() {
-		getView().makeStrikeThrough();
-	}
-	@Kroll.method
-	public void makeOrderedList() {
-		getView().makeOrderedList();
-	}
-
-	@Kroll.method
-	public void makeUnorderedList() {
-		getView().makeUnorderedList();
-	}
-
-	@Kroll.method
-	public void toggleLeft() {
-		getView().setActionToggleLeft();
-	}
-
-	@Kroll.method
-	public void toggleCenter() {
-		getView().setActionToggleCenter();
-	}
-
-	@Kroll.method
-	public void toggleRight() {
-		getView().setActionToggleRight();
-	}
-
-	@Kroll.method
-	public void insertLink(String link, String name) {
-		getView().setActionInsertLink(link, name);
-	}
-
 	@Kroll.setProperty
 	public void setHintText(String hintText) {
 		getView().setHintText(hintText);
+	}
+	
+	@Kroll.getProperty
+	public String getHintText() {
+		return getView().getHintText();
+	}
+	
+	@Kroll.setProperty
+	public void setContent(String content) {
+		getView().setContent(content);
+	}
+
+	@Kroll.getProperty
+	public String getContent() {
+		return getView().getContent();
+	}
+	
+	@Kroll.setProperty
+	public void setEditable(boolean editable) {
+		getView().setEditable(editable);
+	}
+	
+	@Kroll.getProperty
+	public boolean getEditable() {
+		return getView().getEditable();
+	}
+	
+	@Kroll.setProperty
+	public void setColor(Object color) {
+		getView().setColor(color);
+	}
+	
+	@Kroll.setProperty
+	public void setEditorBackgroundColor(Object color) {
+		getView().setEditorBackgroundColor(color);
 	}
 }

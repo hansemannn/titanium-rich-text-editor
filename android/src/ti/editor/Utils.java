@@ -1,9 +1,11 @@
 package ti.editor;
 
 import org.appcelerator.titanium.TiApplication;
+import org.appcelerator.titanium.util.TiConvert;
 import org.appcelerator.titanium.util.TiRHelper;
 
 import android.content.Context;
+
 
 public class Utils {
 	public static int getR(String path) {

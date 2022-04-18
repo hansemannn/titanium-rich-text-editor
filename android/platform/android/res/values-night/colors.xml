@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tieditor_fontColor">#ffffff</color>
+    <color name="tieditor_hintColor">#888888</color>
+    <color name="tieditor_editorBackgroundColor">#1c1c1c</color>
+</resources>
