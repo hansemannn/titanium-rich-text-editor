@@ -35,29 +35,4 @@ class TiEditorModule: TiModule {
   override func moduleId() -> String! {
     return "ti.editor"
   }
-
-  override func startup() {
-    super.startup()
-    debugPrint("[DEBUG] \(self) loaded")
-  }
-
-  @objc(example:)
-  func example(arguments: Array<Any>?) -> String {
-    // Example method. 
-    // Call with "MyModule.example(args)"
-
-    return "hello world!"
-  }
-  
-  @objc public var exampleProp: String {
-     get { 
-        // Example property getter
-        return "Titanium rocks!"
-     }
-     set {
-        // Example property setter
-        // Call with "MyModule.exampleProp = 'newValue'"
-        self.replaceValue(newValue, forKey: "exampleProp", notification: false)
-     }
-   }
 }

@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A7841A222593FF00016ED81 /* RichEditorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7841A122593FF00016ED81 /* RichEditorView.framework */; };
 		3A7841A4225940030016ED81 /* TiEditorEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7841A3225940030016ED81 /* TiEditorEditorView.swift */; };
 		3A7841A62259400D0016ED81 /* TiEditorEditorViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7841A52259400D0016ED81 /* TiEditorEditorViewProxy.swift */; };
+		3A8BADCD263179CA0000321F /* Aztec.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8BADCB263179CA0000321F /* Aztec.xcframework */; };
+		3A8BADCE263179CA0000321F /* Gridicons.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8BADCC263179CA0000321F /* Gridicons.xcframework */; };
+		3A8BADD226317A480000321F /* TitaniumKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A8BADD126317A480000321F /* TitaniumKit.xcframework */; };
 		DB34CDE0207B998A005F8E8C /* TiEditorModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = DB34CDDE207B998A005F8E8C /* TiEditorModuleAssets.m */; };
 		DB34CDE1207B998A005F8E8C /* TiEditorModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = DB34CDDF207B998A005F8E8C /* TiEditorModuleAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB34CDE5207B9EBD005F8E8C /* Foundation.framework */; };
 		DB52E2401E9CCF8D00AAAEE0 /* TiEditor_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = DB52E23F1E9CCF8D00AAAEE0 /* TiEditor_Prefix.pch */; };
 		DB52E2431E9CD0F800AAAEE0 /* TiEditorModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB52E2421E9CD0F800AAAEE0 /* TiEditorModule.swift */; };
 		DB75E5161E9CD59000809B2D /* TiEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = DB75E5151E9CD58100809B2D /* TiEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,12 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A7841A122593FF00016ED81 /* RichEditorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RichEditorView.framework; path = platform/RichEditorView.framework; sourceTree = "<group>"; };
 		3A7841A3225940030016ED81 /* TiEditorEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TiEditorEditorView.swift; path = Classes/TiEditorEditorView.swift; sourceTree = "<group>"; };
 		3A7841A52259400D0016ED81 /* TiEditorEditorViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TiEditorEditorViewProxy.swift; path = Classes/TiEditorEditorViewProxy.swift; sourceTree = "<group>"; };
+		3A8BADCB263179CA0000321F /* Aztec.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Aztec.xcframework; path = platform/Aztec.xcframework; sourceTree = "<group>"; };
+		3A8BADCC263179CA0000321F /* Gridicons.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Gridicons.xcframework; path = platform/Gridicons.xcframework; sourceTree = "<group>"; };
+		3A8BADD126317A480000321F /* TitaniumKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TitaniumKit.xcframework; path = "$(TITANIUM_SDK)/iphone/Frameworks/TitaniumKit.xcframework"; sourceTree = "<group>"; };
 		DB34CDDE207B998A005F8E8C /* TiEditorModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiEditorModuleAssets.m; path = Classes/TiEditorModuleAssets.m; sourceTree = SOURCE_ROOT; };
 		DB34CDDF207B998A005F8E8C /* TiEditorModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiEditorModuleAssets.h; path = Classes/TiEditorModuleAssets.h; sourceTree = SOURCE_ROOT; };
-		DB34CDE5207B9EBD005F8E8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DB52E22A1E9CCD7000AAAEE0 /* TiEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TiEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB52E22E1E9CCD7000AAAEE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		DB52E23F1E9CCF8D00AAAEE0 /* TiEditor_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiEditor_Prefix.pch; sourceTree = SOURCE_ROOT; };
@@ -39,9 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7841A222593FF00016ED81 /* RichEditorView.framework in Frameworks */,
 				DBB66221208481A800EAD6D9 /* TitaniumKit.framework in Frameworks */,
-				DB34CDE6207B9EBD005F8E8C /* Foundation.framework in Frameworks */,
+				3A8BADD226317A480000321F /* TitaniumKit.xcframework in Frameworks */,
+				3A8BADCE263179CA0000321F /* Gridicons.xcframework in Frameworks */,
+				3A8BADCD263179CA0000321F /* Aztec.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +85,9 @@
 		DB34CDE2207B9D6A005F8E8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3A7841A122593FF00016ED81 /* RichEditorView.framework */,
-				DB34CDE5207B9EBD005F8E8C /* Foundation.framework */,
+				3A8BADCB263179CA0000321F /* Aztec.xcframework */,
+				3A8BADCC263179CA0000321F /* Gridicons.xcframework */,
+				3A8BADD126317A480000321F /* TitaniumKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,7 +147,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DBB66220208481A400EAD6D9 /* PBXTargetDependency */,
 			);
 			name = TiEditor;
 			productName = TiEditor;
@@ -156,7 +159,7 @@
 		DB52E2211E9CCD7000AAAEE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					DB52E2291E9CCD7000AAAEE0 = {
 						CreatedOnToolsVersion = 8.3;
@@ -216,13 +219,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		DBB66220208481A400EAD6D9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TitaniumKit;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		DB52E2301E9CCD7000AAAEE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -251,6 +247,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -264,6 +261,10 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(TITANIUM_SDK)/iphone/Frameworks\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -278,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -318,6 +319,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -331,6 +333,10 @@
 				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(TITANIUM_SDK)/iphone/Frameworks\"",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -339,10 +345,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
@@ -358,6 +365,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -374,8 +382,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
@@ -388,6 +400,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcelerator.titanium-rich-text-editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Titanium";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -401,6 +414,7 @@
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -417,8 +431,12 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = (
@@ -428,6 +446,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.appcelerator.titanium-rich-text-editor";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/Titanium";
 				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = "$(ARCHS_STANDARD)";
