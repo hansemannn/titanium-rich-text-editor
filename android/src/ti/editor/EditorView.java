@@ -76,7 +76,7 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		if (hintFontColor != -1) {
 			aztecEditorView.setHintTextColor(hintFontColor);
 		}
-		
+
 		int bgColor = Utils.getColor("tieditor_editorBackgroundColor");
 		if (bgColor != -1) {
 			layoutContainer.setBackgroundColor(hintFontColor);

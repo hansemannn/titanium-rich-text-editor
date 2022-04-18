@@ -16,16 +16,10 @@ import android.app.Activity;
 import android.os.Message;
 import org.appcelerator.kroll.common.AsyncResult;
 
-
 @Kroll.proxy(creatableInModule = TitaniumRichTextEditorModule.class)
 public class EditorViewProxy extends TiViewProxy {
 	protected static final int MSG_BLUR = KrollProxy.MSG_LAST_ID + 101;
 	protected static final int MSG_FOCUS = KrollProxy.MSG_LAST_ID + 102;
-
-	// Constructor
-	public EditorViewProxy() {
-		super();
-	}
 
 	@Override
 	public TiUIView createView(Activity activity) {

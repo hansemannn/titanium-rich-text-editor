@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="tieditor_fontColor">#333333</color>
-    <color name="tieditor_hintColor">#777777</color>
-    <color name="tieditor_editorBackgroundColor">#fafafa</color>
+    <color name="tieditor_fontColor">#000000</color>
+    <color name="tieditor_hintColor">#bebebe</color>
+    <color name="tieditor_editorBackgroundColor">#ffffff</color>
 </resources>

@@ -1,3 +1,7 @@
+repositories {
+    maven { url "https://a8c-libs.s3.amazonaws.com/android" }
+}
+
 dependencies {
-    implementation 'com.github.wordpress-mobile.WordPress-Aztec-Android:aztec:v1.5.7'
+    api "org.wordpress:aztec:v1.5.4"
 }
