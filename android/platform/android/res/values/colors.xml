@@ -4,4 +4,5 @@
     <color name="tieditor_hintColor">#bebebe</color>
     <color name="tieditor_editorBackgroundColor">#ffffff</color>
     <color name="tieditor_toolbarBackgroundColor">#f6fcfb</color>
+    <color name="tieditor_toolbarBorderColor">#e6e6e6</color>
 </resources>
