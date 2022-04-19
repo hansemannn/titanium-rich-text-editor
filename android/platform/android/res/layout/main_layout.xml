@@ -30,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/tieditor_toolbar_height"
             android:layout_alignParentBottom="true"
+            aztec:toolbarBackgroundColor="@color/tieditor_toolbarBackgroundColor"
             aztec:mediaToolbarAvailable="false" />
     </RelativeLayout>
 </FrameLayout>

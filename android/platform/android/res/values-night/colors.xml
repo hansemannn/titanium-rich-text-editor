@@ -3,4 +3,5 @@
     <color name="tieditor_fontColor">#ffffff</color>
     <color name="tieditor_hintColor">#888888</color>
     <color name="tieditor_editorBackgroundColor">#1c1c1c</color>
+    <color name="tieditor_toolbarBackgroundColor">#051110</color>
 </resources>
