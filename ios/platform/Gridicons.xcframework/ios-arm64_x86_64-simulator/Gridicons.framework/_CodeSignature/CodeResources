@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		LfF2rKjl7/TilsIiSMJskUPdUsw=
+		qrpTXK7NvFxzqBNcf9alwXzsm/U=
 		</data>
 		<key>Headers/Gridicons-Swift.h</key>
 		<data>
-		dR7oKbRgY2icEjlRBtHURxfCLVk=
+		WeFTjtbJ8dCQS04IzmYxf0YHohg=
 		</data>
 		<key>Headers/Gridicons.h</key>
 		<data>
@@ -18,55 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xtqtPxOjWfw0glMj+qJ/MHIRodo=
+		jIMeEqNF9xO+15R72Cf6PQ6dlaA=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		SFp6Ln5tX9kJvoB7nFsyN7hBhkE=
-		</data>
-		<key>Modules/Gridicons.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<data>
-		SFp6Ln5tX9kJvoB7nFsyN7hBhkE=
+		EjAiW/XQOL/MAIQO14t4un+DFNg=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		RxHvYQCSH9Xwj7AQS/k4aKznNZ4=
-		</data>
-		<key>Modules/Gridicons.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<data>
-		RxHvYQCSH9Xwj7AQS/k4aKznNZ4=
+		vQ6pEsJmZsvLKPEpAT/fVOzGclw=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		iqgaOOQ5rnBhHPPdnoUy1T/NbbU=
+		a2yiXXrkvX6sxSb384lhOtrnpfE=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JAE8Xto6fcqwep6IIjctg4ipKjE=
-		</data>
-		<key>Modules/Gridicons.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		iqgaOOQ5rnBhHPPdnoUy1T/NbbU=
-		</data>
-		<key>Modules/Gridicons.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		JAE8Xto6fcqwep6IIjctg4ipKjE=
+		+t+CgrtUm217X5uPDD4XADfAVH0=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		gKfnFQJJ17Ye+YTGuXJ19JZUu4g=
+		9lm+v4305YidrKyZYN42UbGEdgo=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RmxhKERgD6EkWU0UiWNnXOEVhtA=
-		</data>
-		<key>Modules/Gridicons.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		gKfnFQJJ17Ye+YTGuXJ19JZUu4g=
-		</data>
-		<key>Modules/Gridicons.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		RmxhKERgD6EkWU0UiWNnXOEVhtA=
+		GUA8naOBOfZJ1FakS331ChgHreY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,14 +55,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lTkf6pgRfyuQFNeM2pJQq5+1YRDZtOZ4eHyh+vTQGSk=
+			cFyAnQv76mD2JZ3240l7X0HqGZ+xPnzTfejP7dr7XFw=
 			</data>
 		</dict>
 		<key>Headers/Gridicons-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yoMAUnV6Qbq6osNkgf0i6LqfodGSFj48jx6Z0G/2kJY=
+			QGPqSMe/ShalOLbHX7VCL/+nEZHeWuFiKIZCgfWJWLo=
 			</data>
 		</dict>
 		<key>Headers/Gridicons.h</key>
@@ -100,84 +76,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KDxW/XYvf2PkZyLt6WquPPK6fyfBmBITce/CAwjog0A=
-			</data>
-		</dict>
-		<key>Modules/Gridicons.swiftmodule/Project/arm64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KDxW/XYvf2PkZyLt6WquPPK6fyfBmBITce/CAwjog0A=
+			8+YxzHkxVmOYhO42Menc5LAbFSFPYVckg1UvdE1dlVk=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5msKpoW4YVaSNQ+2Dj8QmfIFVRkPoUTbcNGrW88fJs4=
-			</data>
-		</dict>
-		<key>Modules/Gridicons.swiftmodule/Project/x86_64.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5msKpoW4YVaSNQ+2Dj8QmfIFVRkPoUTbcNGrW88fJs4=
+			ljuVNoP1AXRabOlYkj6S4CmTcN4WnGa+bzHWrv1E24s=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n6Ol3Y6DZ0n0YV7KIHJHutTwPADv32xmIDKOKvK1zqI=
+			MSABrmKW1rv88CYDfcUpvN6qHpW1JlJNQq7S5tYRwRA=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/jjkn30VBH1onp6QcBbhugMfy9fz/MXz4D8a1ClDOOQ=
-			</data>
-		</dict>
-		<key>Modules/Gridicons.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			n6Ol3Y6DZ0n0YV7KIHJHutTwPADv32xmIDKOKvK1zqI=
-			</data>
-		</dict>
-		<key>Modules/Gridicons.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/jjkn30VBH1onp6QcBbhugMfy9fz/MXz4D8a1ClDOOQ=
+			MI7bUu1CidlslAlS6clbGbrfIttxnueuj0KicmBvuyo=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tRFrA4Rs9ngMt/a8k4gRwg4R0UPEOnjwXhaCPvpyPW4=
+			AYd5DxbFLWRD2Z1iOlEh/nGNFDyGDlCgkx4i8pbYdek=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R9UY2qcznrdVxdHBcloc/TZ7OaFc306EWkFw9ywW8cg=
-			</data>
-		</dict>
-		<key>Modules/Gridicons.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tRFrA4Rs9ngMt/a8k4gRwg4R0UPEOnjwXhaCPvpyPW4=
-			</data>
-		</dict>
-		<key>Modules/Gridicons.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			R9UY2qcznrdVxdHBcloc/TZ7OaFc306EWkFw9ywW8cg=
+			jCYIBbdWWiwAESh63UfOy4sNEkr3WvRFjIQ1fP+1w5A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

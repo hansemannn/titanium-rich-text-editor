@@ -136,13 +136,15 @@ extension TiEditorEditorView {
     linkTitle = editorView.attributedText.attributedSubstring(from: linkRange).string
     let allowTextEdit = !editorView.attributedText.containsAttachments(in: linkRange)
     
-    proxy.fireEvent("addlink", with: [
-      "url": linkURL != nil ? linkURL!.absoluteString : "",
-      "range": ["location": linkRange.location, "length": linkRange.length],
-      "text": linkTitle,
-      "target": target ?? "",
-      "allowTextEdit": allowTextEdit
-    ])
+    if proxy._hasListeners("addlink") {
+      proxy.fireEvent("addlink", with: [
+        "url": linkURL != nil ? linkURL!.absoluteString : "",
+        "range": ["location": linkRange.location, "length": linkRange.length],
+        "text": linkTitle,
+        "target": target ?? "",
+        "allowTextEdit": allowTextEdit
+      ])
+    }
   }
   
   func setLink(link: String, in range: NSRange) {
@@ -269,7 +271,9 @@ extension TiEditorEditorView {
 extension TiEditorEditorView : TextViewFormattingDelegate {
 
   public func textViewCommandToggledAStyle() {
-    proxy.fireEvent("toggle")
+    if proxy._hasListeners("toggle") {
+      proxy.fireEvent("toggle")
+    }
   }
 }
 
@@ -385,8 +389,10 @@ extension TiEditorEditorView : UITextViewDelegate {
       default:
           break
       }
-    
+
+    if proxy._hasListeners("change") {
       proxy.fireEvent("change", with: ["value": editorView.getHTML()])
+    }
   }
 
   public func textViewShouldBeginEditing(_ textView: UITextView) -> Bool {
