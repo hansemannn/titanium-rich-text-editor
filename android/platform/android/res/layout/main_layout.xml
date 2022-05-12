@@ -20,7 +20,7 @@
             android:layout_alignParentTop="true"
             android:gravity="top|start"
             android:imeOptions="flagNoExtractUi"
-            android:padding="20dp"
+            android:padding="0dp"
             android:scrollbars="vertical"
             aztec:historyEnable="@bool/tieditor_history_enabled"
             aztec:historySize="@integer/tieditor_history_size" />
@@ -30,8 +30,8 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/tieditor_toolbar_height"
             android:layout_alignParentBottom="true"
+            aztec:mediaToolbarAvailable="false"
             aztec:toolbarBackgroundColor="@color/tieditor_toolbarBackgroundColor"
-            aztec:toolbarBorderColor="@color/tieditor_toolbarBorderColor"
-            aztec:mediaToolbarAvailable="false" />
+            aztec:toolbarBorderColor="@color/tieditor_toolbarBorderColor" />
     </RelativeLayout>
 </FrameLayout>

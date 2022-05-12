@@ -9,7 +9,9 @@
 package ti.editor;
 
 import org.appcelerator.kroll.KrollDict;
+import org.appcelerator.kroll.KrollPropertyChange;
 import org.appcelerator.kroll.KrollProxy;
+import org.appcelerator.kroll.common.Log;
 import org.appcelerator.titanium.proxy.TiViewProxy;
 import org.appcelerator.titanium.util.TiConvert;
 import org.appcelerator.titanium.view.TiUIView;
@@ -33,6 +35,8 @@ import org.wordpress.aztec.AztecText;
 import org.wordpress.aztec.ITextFormat;
 import org.wordpress.aztec.toolbar.AztecToolbar;
 import org.wordpress.aztec.toolbar.IAztecToolbarClickListener;
+
+import java.util.List;
 
 
 public class EditorView extends TiUIView implements IAztecToolbarClickListener, TextWatcher, AztecText.OnLinkTappedListener {
@@ -60,7 +64,7 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		layoutContainer = mainLayout.findViewById(Utils.getR("id.layout_container"));
 		aztecEditorView = mainLayout.findViewById(Utils.getR("id.editor_textview"));
 		aztecToolbar = mainLayout.findViewById(Utils.getR("id.editor_toolbar"));
-		
+
 		setupColors();
 		
 		aztecEditorView.addTextChangedListener(this);
@@ -94,17 +98,26 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		if (d.containsKey("content")) {
 			setContent(d.getString("content"));
 			
-		} else if (d.containsKey("hintText")) {
+		}
+		if (d.containsKey("hintText")) {
 			setHintText(d.getString("hintText"));
 			
-		} else if (d.containsKey("editable")) {
+		}
+		if (d.containsKey("editable")) {
 			setEditable(d.getBoolean("editable"));
 			
-		} else if (d.containsKey("color")) {
+		}
+		if (d.containsKey("color")) {
 			setColor(d.get("color"));
 			
-		}  else if (d.containsKey("editorBackgroundColor")) {
+		}
+		if (d.containsKey("editorBackgroundColor")) {
 			setEditorBackgroundColor(d.get("editorBackgroundColor"));
+
+		}
+		if (d.containsKey("editorToolbarVisible")) {
+			setEditorToolbarVisible(d.getBoolean("editorToolbarVisible"));
+
 		}
 	}
 
@@ -173,6 +186,10 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		aztecEditorView.requestFocus();
 		InputMethodManager imm = (InputMethodManager) TiApplication.getAppCurrentActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
 		imm.toggleSoftInputFromWindow(aztecEditorView.getWindowToken(), InputMethodManager.SHOW_IMPLICIT, 0);
+	}
+
+	public void setEditorToolbarVisible(Boolean editorToolbarVisible) {
+		aztecToolbar.setVisibility(editorToolbarVisible ? View.VISIBLE : View.GONE);
 	}
 
 	public void blur() {

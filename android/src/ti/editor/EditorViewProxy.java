@@ -67,6 +67,11 @@ public class EditorViewProxy extends TiViewProxy {
 	}
 
 	@Kroll.setProperty
+	public void setEditorToolbarVisible(Boolean editorToolbarVisible) {
+		getView().setEditorToolbarVisible(editorToolbarVisible);
+	}
+
+	@Kroll.setProperty
 	public void setHintText(String hintText) {
 		getView().setHintText(hintText);
 	}
