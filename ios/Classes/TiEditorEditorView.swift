@@ -241,17 +241,19 @@ extension TiEditorEditorView {
   var scrollableItemsForToolbar: [FormatBarItem] {
       let headerButton = makeToolbarButton(identifier: .header1)
 
-      let listButton = makeToolbarButton(identifier: .unorderedlist)
+      let unorderedListButton = makeToolbarButton(identifier: .unorderedlist)
+      let orderedlistButton = makeToolbarButton(identifier: .orderedlist)
       var listIcons = [String: UIImage]()
       for list in Constants.lists {
           listIcons[list.formattingIdentifier.rawValue] = list.iconImage
       }
 
-      listButton.alternativeIcons = listIcons
+      unorderedListButton.alternativeIcons = listIcons
 
       return [
           headerButton,
-          listButton,
+          unorderedListButton,
+          orderedlistButton,
           makeToolbarButton(identifier: .bold),
           makeToolbarButton(identifier: .italic),
           // makeToolbarButton(identifier: .link),
