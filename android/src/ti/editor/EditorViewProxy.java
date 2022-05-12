@@ -8,6 +8,7 @@
  */
 package ti.editor;
 
+import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollProxy;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.proxy.TiViewProxy;
@@ -67,8 +68,18 @@ public class EditorViewProxy extends TiViewProxy {
 	}
 
 	@Kroll.setProperty
+	public void setPadding(KrollDict padding) {
+		getView().setPadding(padding);
+	}
+
+	@Kroll.setProperty
 	public void setEditorToolbarVisible(Boolean editorToolbarVisible) {
 		getView().setEditorToolbarVisible(editorToolbarVisible);
+	}
+
+	@Kroll.setProperty
+	public void setHideVerticalScrollBar(Boolean hideVerticalScrollBar) {
+		getView().setHideVerticalScrollBar(hideVerticalScrollBar);
 	}
 
 	@Kroll.setProperty

@@ -12,11 +12,13 @@ import org.appcelerator.kroll.KrollDict;
 import org.appcelerator.kroll.KrollPropertyChange;
 import org.appcelerator.kroll.KrollProxy;
 import org.appcelerator.kroll.common.Log;
+import org.appcelerator.titanium.TiC;
 import org.appcelerator.titanium.proxy.TiViewProxy;
 import org.appcelerator.titanium.util.TiConvert;
 import org.appcelerator.titanium.view.TiUIView;
 import org.appcelerator.titanium.TiApplication;
 
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -75,11 +77,14 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 	}
 	
 	private void setupColors() {
+		// TODO: Make configurable?
+		aztecEditorView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+
 		int fontColor = Utils.getColor("tieditor_fontColor");
 		if (fontColor != -1) {
 			aztecEditorView.setTextColor(fontColor);
 		}
-		
+
 		int hintFontColor = Utils.getColor("tieditor_hintColor");
 		if (hintFontColor != -1) {
 			aztecEditorView.setHintTextColor(hintFontColor);
@@ -97,27 +102,27 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 
 		if (d.containsKey("content")) {
 			setContent(d.getString("content"));
-			
 		}
 		if (d.containsKey("hintText")) {
 			setHintText(d.getString("hintText"));
-			
 		}
 		if (d.containsKey("editable")) {
 			setEditable(d.getBoolean("editable"));
-			
 		}
 		if (d.containsKey("color")) {
 			setColor(d.get("color"));
-			
 		}
 		if (d.containsKey("editorBackgroundColor")) {
 			setEditorBackgroundColor(d.get("editorBackgroundColor"));
-
 		}
 		if (d.containsKey("editorToolbarVisible")) {
 			setEditorToolbarVisible(d.getBoolean("editorToolbarVisible"));
-
+		}
+		if (d.containsKey("hideVerticalScrollBar")) {
+			setHideVerticalScrollBar(d.getBoolean("hideVerticalScrollBar"));
+		}
+		if (d.containsKey("padding")) {
+			setPadding(d.getKrollDict("padding"));
 		}
 	}
 
@@ -188,6 +193,17 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		imm.toggleSoftInputFromWindow(aztecEditorView.getWindowToken(), InputMethodManager.SHOW_IMPLICIT, 0);
 	}
 
+	public void setPadding(KrollDict args) {
+		int left = TiConvert.toInt(args.getInt(TiC.PROPERTY_LEFT), 0);
+		int top = TiConvert.toInt(args.getInt(TiC.PROPERTY_TOP), 0);
+		int right = TiConvert.toInt(args.getInt(TiC.PROPERTY_RIGHT), 0);
+		int bottom = TiConvert.toInt(args.getInt(TiC.PROPERTY_BOTTOM), 0);
+
+		if (aztecEditorView != null) {
+			aztecEditorView.setPadding(left, top, right, bottom);
+		}
+	}
+
 	public void setEditorToolbarVisible(Boolean editorToolbarVisible) {
 		aztecToolbar.setVisibility(editorToolbarVisible ? View.VISIBLE : View.GONE);
 	}
@@ -223,6 +239,10 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
     	
     	aztecEditorView.setEnabled(editable);
     }
+
+    public void setHideVerticalScrollBar(Boolean hideVerticalScrollBar) {
+		aztecEditorView.setVerticalScrollBarEnabled(!hideVerticalScrollBar);
+	}
     
     public boolean getEditable() {
     	return aztecEditorView.isEnabled();
