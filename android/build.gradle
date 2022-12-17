@@ -3,5 +3,5 @@ repositories {
 }
 
 dependencies {
-    api "org.wordpress:aztec:v1.5.7"
+    api "org.wordpress:aztec:v1.6.2" // >= 1.6.3 is Android 7+ (!!)
 }
