@@ -1,0 +1,10 @@
+
+plugin 'cocoapods-binary'
+install! 'cocoapods', :integrate_targets => false
+
+use_frameworks!
+platform :ios, '11.0'
+
+target "TiEditor" do
+    pod 'WordPress-Aztec-iOS', '1.19.8', :binary => true
+end

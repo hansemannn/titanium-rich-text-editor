@@ -91,10 +91,15 @@ public class EditorViewProxy extends TiViewProxy {
 	public String getHintText() {
 		return getView().getHintText();
 	}
-	
+
 	@Kroll.setProperty
 	public void setContent(String content) {
 		getView().setContent(content);
+	}
+
+	@Kroll.getProperty
+	public boolean getIsChanged() {
+		return getView().isChanged();
 	}
 
 	@Kroll.getProperty

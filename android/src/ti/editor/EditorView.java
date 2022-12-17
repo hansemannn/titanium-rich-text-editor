@@ -47,12 +47,14 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 	private AztecToolbar aztecToolbar;
 	private FrameLayout mainLayout;
 	private RelativeLayout layoutContainer;
+	private boolean isInitialContent;
 	private final TiViewProxy viewProxy;
 
 	public EditorView(TiViewProxy proxy) {
 		super(proxy);
 		
 		viewProxy = proxy;
+		isInitialContent = true;
 		
 		setupAztecEditor();
 		setNativeView(mainLayout);
@@ -219,7 +221,12 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 	}
 
 	public void setContent(String content) {
-        aztecEditorView.fromHtml(content, false);
+        aztecEditorView.fromHtml(content, isInitialContent);
+		isInitialContent = false;
+	}
+
+	public boolean isChanged() {
+		return aztecEditorView.hasChanges() == AztecText.EditorHasChanges.CHANGES;
 	}
 
     public void setHintText(String hintText) {
