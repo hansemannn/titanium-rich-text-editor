@@ -37,6 +37,8 @@ import org.wordpress.aztec.AztecText;
 import org.wordpress.aztec.ITextFormat;
 import org.wordpress.aztec.toolbar.AztecToolbar;
 import org.wordpress.aztec.toolbar.IAztecToolbarClickListener;
+import org.wordpress.aztec.toolbar.ToolbarAction;
+import org.wordpress.aztec.toolbar.ToolbarItems;
 
 import java.util.List;
 
@@ -74,6 +76,21 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		aztecEditorView.addTextChangedListener(this);
 		aztecEditorView.setOnLinkTappedListener(this);
 		aztecEditorView.setLinkTapEnabled(true);
+
+		aztecToolbar.setToolbarItems(new ToolbarItems.BasicLayout(
+				ToolbarAction.HEADING,
+				ToolbarAction.LIST,
+			//	ToolbarAction.QUOTE,
+				ToolbarAction.BOLD,
+			//	ToolbarAction.ITALIC,
+			//	ToolbarAction.LINK,
+				ToolbarAction.UNDERLINE,
+				ToolbarAction.STRIKETHROUGH,
+				ToolbarAction.ALIGN_LEFT,
+				ToolbarAction.ALIGN_CENTER,
+				ToolbarAction.ALIGN_RIGHT
+			//	ToolbarAction.HORIZONTAL_RULE
+		));
 
 		Aztec.with(aztecEditorView, aztecToolbar, this);
 	}
