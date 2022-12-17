@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aztec="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/fullWidthHeight">
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         style="@style/fullWidthHeight"
         android:id="@+id/layout_container"
         android:background="@color/tieditor_editorBackgroundColor"
@@ -23,7 +21,8 @@
             android:padding="0dp"
             android:scrollbars="vertical"
             aztec:historyEnable="@bool/tieditor_history_enabled"
-            aztec:historySize="@integer/tieditor_history_size" />
+            aztec:historySize="@integer/tieditor_history_size"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <org.wordpress.aztec.toolbar.AztecToolbar
             android:id="@+id/editor_toolbar"
