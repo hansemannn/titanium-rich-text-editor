@@ -1,6 +1,6 @@
 # Titanium Rich Text Editor
 
-Use the native `Aztec` rich text editor in Titanium!
+Use the native `Aztec` rich text editor ([iOS](https://github.com/wordpress-mobile/AztecEditor-ios) & [Android](https://github.com/wordpress-mobile/AztecEditor-Android)) in Titanium!
 
 ## Requirements
 
