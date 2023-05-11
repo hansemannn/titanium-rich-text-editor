@@ -255,13 +255,13 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
     }
     
     public void setEditable(boolean editable) {
-    	if (editable) {
-    		aztecEditorView.setInputType(InputType.TYPE_CLASS_TEXT);
-    	} else {
-    		aztecEditorView.setInputType(InputType.TYPE_NULL);
-    	}
-    	
-    	aztecEditorView.setEnabled(editable);
+		aztecEditorView.setFocusable(false);
+		aztecEditorView.setFocusableInTouchMode(false);
+		aztecEditorView.setEnabled(editable);
+		aztecEditorView.setKeyListener(null);
+
+		aztecEditorView.clearFocus();
+		aztecToolbar.setVisibility(View.GONE);
     }
 
     public void setHideVerticalScrollBar(Boolean hideVerticalScrollBar) {
