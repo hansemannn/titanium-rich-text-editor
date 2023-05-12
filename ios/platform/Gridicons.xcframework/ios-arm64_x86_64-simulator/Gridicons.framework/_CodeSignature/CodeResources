@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		qrpTXK7NvFxzqBNcf9alwXzsm/U=
+		QreItmYY0ggM9ZJnhdY+ExhBWoA=
 		</data>
 		<key>Headers/Gridicons-Swift.h</key>
 		<data>
-		WeFTjtbJ8dCQS04IzmYxf0YHohg=
+		bIp9QJGq2eVzEZdFgp+X/JNsiKI=
 		</data>
 		<key>Headers/Gridicons.h</key>
 		<data>
@@ -18,35 +18,43 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jIMeEqNF9xO+15R72Cf6PQ6dlaA=
+		AF3Y8936Pt+VWMlcha+bCd4UW1Y=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		EjAiW/XQOL/MAIQO14t4un+DFNg=
+		bVZnjcQWi78zbmIZEs+ow9ZZxik=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		vQ6pEsJmZsvLKPEpAT/fVOzGclw=
+		TyU1q4UyTk58Mfi01+xlo8XgLRE=
+		</data>
+		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		a2yiXXrkvX6sxSb384lhOtrnpfE=
+		iuQPyu3w0atr/qkOc97yNojEPjQ=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+t+CgrtUm217X5uPDD4XADfAVH0=
+		kyZbcKocfhydpGNJmMdSEIwPVT8=
+		</data>
+		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		FSPnLbho3G+LL9smI3XgVOqBIQ4=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		9lm+v4305YidrKyZYN42UbGEdgo=
+		Jz8vWrigunFXQfc4tPy1JdCzfaQ=
 		</data>
 		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GUA8naOBOfZJ1FakS331ChgHreY=
+		7P7F+79I52rLWeo+GelQjqOW2vw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		PPOtqsvE34/sK+IeZeHwyQxMpxY=
+		5JQdyobam9fiSLb9f52yaki9a84=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,14 +63,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cFyAnQv76mD2JZ3240l7X0HqGZ+xPnzTfejP7dr7XFw=
+			iBn7ju3FRpq6TlwbO2sq9mcBf1sxaJ/RbrV2T9BDBj4=
 			</data>
 		</dict>
 		<key>Headers/Gridicons-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QGPqSMe/ShalOLbHX7VCL/+nEZHeWuFiKIZCgfWJWLo=
+			LoVOt2uuu4IaDqGMSvpvhUAjnCg3mtILqwEvKMRot+c=
 			</data>
 		</dict>
 		<key>Headers/Gridicons.h</key>
@@ -76,49 +84,63 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8+YxzHkxVmOYhO42Menc5LAbFSFPYVckg1UvdE1dlVk=
+			XM0raHFZKPNfekGXwKz4qGAn+4jHokJvOW/APNr8g4w=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ljuVNoP1AXRabOlYkj6S4CmTcN4WnGa+bzHWrv1E24s=
+			pt/gCOLLCKEmMSGaEvE/EwYBx63/KQjINfKrLwX40JA=
+			</data>
+		</dict>
+		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MSABrmKW1rv88CYDfcUpvN6qHpW1JlJNQq7S5tYRwRA=
+			tWt7/nHd6m5qZIGsml/dQn3nlPvYQhl5McmbGnNQYF8=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MI7bUu1CidlslAlS6clbGbrfIttxnueuj0KicmBvuyo=
+			aucoANHrDAwmKZ/xotLcujilBzisdqqj/sR1TzTyAYo=
+			</data>
+		</dict>
+		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AYd5DxbFLWRD2Z1iOlEh/nGNFDyGDlCgkx4i8pbYdek=
+			m/nvM+vlknQmvGtRSyqu9oLr5WHUWhgsQGPRXfP8taI=
 			</data>
 		</dict>
 		<key>Modules/Gridicons.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jCYIBbdWWiwAESh63UfOy4sNEkr3WvRFjIQ1fP+1w5A=
+			rbWtuEr1sA6MMIlT7DPRnydGIt+gW9AWxoeE1fuMv28=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8r27XCOIb70uMj+Hs/Y5p1VIMeKJpfOdIa2mO79GTEU=
+			mqmslY4WDi0S8Lfp34QxrMtDuXeZ84OR33Lo2h9QYq0=
 			</data>
 		</dict>
 	</dict>

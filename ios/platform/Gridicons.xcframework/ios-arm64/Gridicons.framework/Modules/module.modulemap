@@ -6,6 +6,6 @@ framework module Gridicons {
 }
 
 module Gridicons.Swift {
-    header "Gridicons-Swift.h"
-    requires objc
+  header "Gridicons-Swift.h"
+  requires objc
 }
