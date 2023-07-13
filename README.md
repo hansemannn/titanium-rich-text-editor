@@ -31,7 +31,7 @@ editorView.contentInset = { left: 8, right: 8, top: 10, bottom: 10 };
 editorView.padding = { left: 8, right: 8, top: 10, bottom: 10 };
 
 // Scroll Indicator Insets
-editorView.scrollIndicatorInsets = = { top: 10, bottom: 10 };
+editorView.scrollIndicatorInsets = { top: 10, bottom: 10 };
 
 // Hint Text (Android-Only):
 editorView.hintText = "Enter text here...";
