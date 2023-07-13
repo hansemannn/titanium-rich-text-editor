@@ -45,7 +45,10 @@ editorView.content = "<h1>Hello World<h1>";
 editorView.content;
 
 // Check if content changed: Android-Only
-editorView.isChanged; 
+editorView.isChanged;
+
+// BackgroundColor: iOS-Only
+editorView.editorBackgroundColor = "#CCC";
 
 editorView.addEventListener('change', ({ value }) => {
   console.warn('Content changed: ', value);
