@@ -76,6 +76,7 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
 		aztecEditorView.addTextChangedListener(this);
 		aztecEditorView.setOnLinkTappedListener(this);
 		aztecEditorView.setLinkTapEnabled(true);
+		aztecEditorView.setCalypsoMode(false);
 
 		aztecToolbar.setToolbarItems(new ToolbarItems.BasicLayout(
 				ToolbarAction.HEADING,
@@ -257,8 +258,6 @@ public class EditorView extends TiUIView implements IAztecToolbarClickListener, 
     public void setEditable(boolean editable) {
 		aztecEditorView.setFocusable(false);
 		aztecEditorView.setFocusableInTouchMode(false);
-		aztecEditorView.setEnabled(editable);
-		aztecEditorView.setKeyListener(null);
 
 		aztecEditorView.clearFocus();
 		aztecToolbar.setVisibility(View.GONE);
