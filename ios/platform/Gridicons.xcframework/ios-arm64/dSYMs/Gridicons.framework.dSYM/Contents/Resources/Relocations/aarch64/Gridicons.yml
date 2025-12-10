@@ -1,0 +1,55 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/hans/Library/Caches/org.carthage.CarthageKit/DerivedData/26.1_17B55/Gridicons-iOS/1.2.0/Build/Intermediates.noindex/ArchiveIntermediates/Gridicons/BuildProductsPath/Release-iphoneos/Gridicons.framework/Gridicons'
+relocations:
+  - { offset: 0x6CE4C, size: 0x8, addend: 0x0, symName: _GridiconsVersionString, symObjAddr: 0x0, symBinAddr: 0x82F0, symSize: 0x0 }
+  - { offset: 0x6CE83, size: 0x8, addend: 0x0, symName: _GridiconsVersionNumber, symObjAddr: 0x30, symBinAddr: 0x8320, symSize: 0x0 }
+  - { offset: 0x6CEC5, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC11defaultSizeSo6CGSizeVvau', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xC }
+  - { offset: 0x6CEE9, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC11defaultSizeSo6CGSizeVvpZ', symObjAddr: 0x890, symBinAddr: 0x8330, symSize: 0x0 }
+  - { offset: 0x6CF03, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC5cache33_7C4CE4808F5627D72845EC3360EFA5D9LLSo7NSCacheCyyXlyXlGvpZ', symObjAddr: 0x8D0, symBinAddr: 0xC7D0, symSize: 0x0 }
+  - { offset: 0x6CF11, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC11defaultSizeSo6CGSizeVvau', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xC }
+  - { offset: 0x6CF2F, size: 0x8, addend: 0x0, symName: '_$sSo7UIImageC9GridiconsE8gridicon_4sizeAbC12GridiconTypeO_So6CGSizeVtFZ', symObjAddr: 0xC, symBinAddr: 0x400C, symSize: 0x4 }
+  - { offset: 0x6CF88, size: 0x8, addend: 0x0, symName: '_$sSo7UIImageC9GridiconsE8gridiconyAbC12GridiconTypeOFZTo', symObjAddr: 0x10, symBinAddr: 0x4010, symSize: 0x20 }
+  - { offset: 0x6CFD8, size: 0x8, addend: 0x0, symName: '_$sSo7UIImageC9GridiconsE8gridicon_4sizeAbC12GridiconTypeO_So6CGSizeVtFZTo', symObjAddr: 0x30, symBinAddr: 0x4030, symSize: 0x18 }
+  - { offset: 0x6D139, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC5cache33_7C4CE4808F5627D72845EC3360EFA5D9LL_WZ', symObjAddr: 0x54, symBinAddr: 0x4054, symSize: 0x30 }
+  - { offset: 0x6D17F, size: 0x8, addend: 0x0, symName: '_$sSo30UIGraphicsImageRendererContextCIegg_ABIyBy_TR', symObjAddr: 0x84, symBinAddr: 0x4084, symSize: 0x38 }
+  - { offset: 0x6D197, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconCfETo', symObjAddr: 0x188, symBinAddr: 0x4184, symSize: 0x4 }
+  - { offset: 0x6D1DE, size: 0x8, addend: 0x0, symName: '_$sSo7UIImageC9GridiconsE8gridicon_4sizeAbC12GridiconTypeO_So6CGSizeVtFZTf4nnd_n', symObjAddr: 0x2E4, symBinAddr: 0x42E0, symSize: 0x298 }
+  - { offset: 0x6D343, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconCMa', symObjAddr: 0x57C, symBinAddr: 0x4578, symSize: 0x20 }
+  - { offset: 0x6D357, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC12generateIcon33_7C4CE4808F5627D72845EC3360EFA5D9LL4type4withSo7UIImageCAA0B4TypeO_So6CGSizeVtFZySo30UIGraphicsImageRendererContextCXEfU_TA', symObjAddr: 0x5AC, symBinAddr: 0x45A8, symSize: 0x50 }
+  - { offset: 0x6D3A0, size: 0x8, addend: 0x0, symName: '_$sSo30UIGraphicsImageRendererContextCIgg_ABIegg_TRTA', symObjAddr: 0x60C, symBinAddr: 0x4608, symSize: 0x20 }
+  - { offset: 0x6D3C9, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x62C, symBinAddr: 0x4628, symSize: 0x10 }
+  - { offset: 0x6D3DD, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x63C, symBinAddr: 0x4638, symSize: 0x8 }
+  - { offset: 0x6D3F1, size: 0x8, addend: 0x0, symName: ___swift_memcpy16_8, symObjAddr: 0x644, symBinAddr: 0x4640, symSize: 0xC }
+  - { offset: 0x6D405, size: 0x8, addend: 0x0, symName: ___swift_noop_void_return, symObjAddr: 0x650, symBinAddr: 0x464C, symSize: 0x4 }
+  - { offset: 0x6D419, size: 0x8, addend: 0x0, symName: '_$sSo6CGSizeVwet', symObjAddr: 0x654, symBinAddr: 0x4650, symSize: 0x20 }
+  - { offset: 0x6D42D, size: 0x8, addend: 0x0, symName: '_$sSo6CGSizeVwst', symObjAddr: 0x674, symBinAddr: 0x4670, symSize: 0x28 }
+  - { offset: 0x6D441, size: 0x8, addend: 0x0, symName: '_$sSo6CGSizeVMa', symObjAddr: 0x69C, symBinAddr: 0x4698, symSize: 0x50 }
+  - { offset: 0x6D57F, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC11defaultSizeSo6CGSizeVvgZ', symObjAddr: 0x48, symBinAddr: 0x4048, symSize: 0xC }
+  - { offset: 0x6D5AE, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC10iconOfTypeySo7UIImageCAA0bE0OFZ', symObjAddr: 0xBC, symBinAddr: 0x40BC, symSize: 0xC }
+  - { offset: 0x6D5E0, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC10iconOfTypeySo7UIImageCAA0bE0OFZ', symObjAddr: 0xBC, symBinAddr: 0x40BC, symSize: 0xC }
+  - { offset: 0x6D5FD, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC10iconOfTypeySo7UIImageCAA0bE0OFZ', symObjAddr: 0xBC, symBinAddr: 0x40BC, symSize: 0xC }
+  - { offset: 0x6D610, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconCACycfC', symObjAddr: 0xCC, symBinAddr: 0x40C8, symSize: 0x20 }
+  - { offset: 0x6D624, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconCACycfc', symObjAddr: 0xEC, symBinAddr: 0x40E8, symSize: 0x30 }
+  - { offset: 0x6D65C, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconCACycfcTo', symObjAddr: 0x11C, symBinAddr: 0x4118, symSize: 0x3C }
+  - { offset: 0x6D698, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconCfD', symObjAddr: 0x158, symBinAddr: 0x4154, symSize: 0x30 }
+  - { offset: 0x6D75F, size: 0x8, addend: 0x0, symName: '_$s9Gridicons8GridiconC10cachedIcon33_7C4CE4808F5627D72845EC3360EFA5D9LL4type4withSo7UIImageCSgAA0B4TypeO_So6CGSizeVtFZTf4nnd_n', symObjAddr: 0x18C, symBinAddr: 0x4188, symSize: 0x158 }
+  - { offset: 0x6D9B9, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeO8rawValueSivg', symObjAddr: 0x0, symBinAddr: 0x46EC, symSize: 0x4 }
+  - { offset: 0x6DA78, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeO4iconSo7UIImageCvg', symObjAddr: 0x4, symBinAddr: 0x46F0, symSize: 0x2D0 }
+  - { offset: 0x6DC0F, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeO4nameSSvg', symObjAddr: 0x3E8, symBinAddr: 0x4AD4, symSize: 0x12E8 }
+  - { offset: 0x6DDCE, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOSHAASQWb', symObjAddr: 0x170C, symBinAddr: 0x5DF8, symSize: 0x4 }
+  - { offset: 0x6DDE2, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOACSQAAWl', symObjAddr: 0x1710, symBinAddr: 0x5DFC, symSize: 0x40 }
+  - { offset: 0x6DDF6, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOMa', symObjAddr: 0x1750, symBinAddr: 0x5E3C, symSize: 0x10 }
+  - { offset: 0x6DE0A, size: 0x8, addend: 0x0, symName: '_$s9Gridicons11BundleToken33_BB03C531B1A9B67F1AD196374F7F0550LLCMa', symObjAddr: 0x1760, symBinAddr: 0x5E4C, symSize: 0x20 }
+  - { offset: 0x6DED5, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x2EC, symBinAddr: 0x49D8, symSize: 0x14 }
+  - { offset: 0x6DF66, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOSHAASH9hashValueSivgTW', symObjAddr: 0x300, symBinAddr: 0x49EC, symSize: 0x44 }
+  - { offset: 0x6E000, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x344, symBinAddr: 0x4A30, symSize: 0x28 }
+  - { offset: 0x6E03E, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x36C, symBinAddr: 0x4A58, symSize: 0x40 }
+  - { offset: 0x6E0C1, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeO8rawValueSivg', symObjAddr: 0x0, symBinAddr: 0x46EC, symSize: 0x4 }
+  - { offset: 0x6E1F5, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeO8rawValueACSgSi_tcfC', symObjAddr: 0x2D4, symBinAddr: 0x49C0, symSize: 0x18 }
+  - { offset: 0x6E217, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOSYAASY8rawValuexSg03RawE0Qz_tcfCTW', symObjAddr: 0x3AC, symBinAddr: 0x4A98, symSize: 0x30 }
+  - { offset: 0x6E240, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeOSYAASY8rawValue03RawE0QzvgTW', symObjAddr: 0x3DC, symBinAddr: 0x4AC8, symSize: 0xC }
+  - { offset: 0x6E254, size: 0x8, addend: 0x0, symName: '_$s9Gridicons11BundleToken33_BB03C531B1A9B67F1AD196374F7F0550LLCfD', symObjAddr: 0x16D0, symBinAddr: 0x5DBC, symSize: 0x10 }
+  - { offset: 0x6E27A, size: 0x8, addend: 0x0, symName: '_$s9Gridicons12GridiconTypeO8rawValueACSgSi_tcfCTf4nd_n', symObjAddr: 0x16E0, symBinAddr: 0x5DCC, symSize: 0x2C }
+  - { offset: 0x6E382, size: 0x8, addend: 0x0, symName: '_$s9Gridicons19ResourceBundleClass33_66B303EBD4DF500CFFBF2CF9A56FBFCDLLCMa', symObjAddr: 0x10, symBinAddr: 0x5E6C, symSize: 0x20 }
+...

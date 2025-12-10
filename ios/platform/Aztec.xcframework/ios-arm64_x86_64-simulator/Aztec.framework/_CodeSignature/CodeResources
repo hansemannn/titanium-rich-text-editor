@@ -6,47 +6,47 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		umJfGMDrClz7Yua2lumfevIkvp4=
+		PeDatLPiCXEI+9+BuFLHWaJS+VA=
 		</data>
 		<key>Headers/Aztec-Swift.h</key>
 		<data>
-		ttuuHaCzmjf46YZpXBpk2OvSK30=
+		34ad3WFwmEvUfeC/5dDDzxTluY4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dY7KAkKT/Hrrie6RrNViHQDL8FY=
+		Gjwp7zlTt3E01e5BGmJy1zpIwDk=
 		</data>
 		<key>Modules/Aztec.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		JhB9PAhWjswVN8/fSguu9qcBPms=
+		M/BJQZXpuhdaTJmJRwTI9q5xldA=
 		</data>
 		<key>Modules/Aztec.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		nE1LdaCHYIA5GJMmbEcXDpIAvb4=
+		KTrGUYy01TVjnkPcJX3o9497Zbk=
 		</data>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		gcwBsH4BgyFY4sVtNt+/xOKS3vY=
 		</data>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		nXZjDtfQYneeP6SUjW2DlbhkSEc=
+		3vah0nvLC+Z9Dh3ky/630GqEWc8=
 		</data>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yCha0JnkPt7HFqNV196SmekHDAM=
+		xNjE5VjNtB0nM5CY3syVuVJrzm4=
 		</data>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		FSPnLbho3G+LL9smI3XgVOqBIQ4=
+		gcwBsH4BgyFY4sVtNt+/xOKS3vY=
 		</data>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2WOK1dSlYZYQK/MFbra71QWu8tE=
+		fMl4nHpd4HapAM6xG13QeXSmV9I=
 		</data>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/wkBrP4M0hpx7CU6LdsOdBL/0K4=
+		05BTRKEvPlQ5/KBceOGnvSr+geQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,70 +67,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o3CZfzDs0weKLF30stGPkYTI3QmJP3dHCz9/cbcqW48=
+			q8DVlj11iQ78S2DLaA2z1HH8MMco3LLOYd8Ie003Otg=
 			</data>
 		</dict>
 		<key>Headers/Aztec-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WqFSk4CDaJtczS0sMwQDY18m5p0r05gocpuQDt1CxEM=
+			9hpIt0RwRSFaz6ItHjfQVZbS7l6YDx1MLkT4As/Jcsw=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			be6E0pqVdAjDW3zAJf5KMsNGkmEVsXOvewPkfX4ljdQ=
+			b4n5aDD6xfL/LAwc1rXkEM0WHYiolSzI9cJn8d/xJ3c=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mf+clc/2zYsEXgfQUGU9BsiJa5kq5e1G1lEqN2dRyXk=
+			w2mo9WSWsY3Z4sbYfh6WFRwZoXmYMl4jxsqMFEl/H+g=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bMzfkxp2OwftY2OxmE9ZsXBNyHKks8ErYTCiHsvsoFo=
+			Xz7aM3rZ3XvyZv3XpWQjHdMAe41pA4Vx/sX6VNhcI+o=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivMEYE11l21Y5wysgVPD0NJPch7pgnzU4Fv2B4hdEDY=
+			TkKH0mc5OoHxT8r0CWolfDMsfDzQyX20IddLUUmp5Rw=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KnRdWE4y6t4QM5zi5JDptPdHFgJy1Tku+7GLkZS2aNM=
+			Qnesa0n4URGWAopawg9bGx36dUwkYV00BoCJ8LFzlyg=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KJ+GaeF2W4+9p5uKDqhL4++oq1zpdjGxY5wJHlpy7Sc=
+			AJWcq0gmpmkPykzKXZHwZeFsX37iXAzkeS6R5smDMTI=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Hcr+6ANhjtKUGvBFvdgS8QgzqI+kR2e5fvpfgvzFA8s=
+			yEhabVHmlUIdPYExUEe4lobWCuaT6HMMeQHhCBcGHDk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
