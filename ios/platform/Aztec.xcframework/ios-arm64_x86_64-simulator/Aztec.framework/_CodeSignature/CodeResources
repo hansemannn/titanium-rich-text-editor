@@ -6,23 +6,23 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		PeDatLPiCXEI+9+BuFLHWaJS+VA=
+		mSk0auzF+qOBlfwn5ttcZ3E3RMY=
 		</data>
 		<key>Headers/Aztec-Swift.h</key>
 		<data>
-		34ad3WFwmEvUfeC/5dDDzxTluY4=
+		KhQjhzXjInUaSk/2eK83riXdwpw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Gjwp7zlTt3E01e5BGmJy1zpIwDk=
+		DOj8IJcwqHsyKN5DMqYoForYcvU=
 		</data>
 		<key>Modules/Aztec.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		M/BJQZXpuhdaTJmJRwTI9q5xldA=
+		oij7kca7B+QRg6qzBwHJna2FXhs=
 		</data>
 		<key>Modules/Aztec.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		KTrGUYy01TVjnkPcJX3o9497Zbk=
+		SG7IS7dKRjFon3xa3fM2Jy4CM4k=
 		</data>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3vah0nvLC+Z9Dh3ky/630GqEWc8=
+		97YS2KySgo/eAsG9mdbLLoiVeAw=
 		</data>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xNjE5VjNtB0nM5CY3syVuVJrzm4=
+		cq4KFw1uL4QuPpi5uiOvCuHZJdQ=
 		</data>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fMl4nHpd4HapAM6xG13QeXSmV9I=
+		sQjahxsCJx2vTANfeCza82UfyuQ=
 		</data>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		05BTRKEvPlQ5/KBceOGnvSr+geQ=
+		OKpXR4pLV8dgYs5rhgGWkqhh250=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,28 +67,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q8DVlj11iQ78S2DLaA2z1HH8MMco3LLOYd8Ie003Otg=
+			REey7P9t8/UPQ9CbSmoLHDRAUBgKNGnMzagYN6RBqpo=
 			</data>
 		</dict>
 		<key>Headers/Aztec-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9hpIt0RwRSFaz6ItHjfQVZbS7l6YDx1MLkT4As/Jcsw=
+			u59JWp5dVNpraP/nZOzLElt023jnDvWikwa2dMZu8Yc=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b4n5aDD6xfL/LAwc1rXkEM0WHYiolSzI9cJn8d/xJ3c=
+			FyZAoAF6oqpDJDfrMFx2HcuKLM67LQEdct7Fm0kuD2g=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w2mo9WSWsY3Z4sbYfh6WFRwZoXmYMl4jxsqMFEl/H+g=
+			/rAzY0/uCs6KpKP9fTXnzPteRHl/Q11grUUkgLHKZ0Q=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Xz7aM3rZ3XvyZv3XpWQjHdMAe41pA4Vx/sX6VNhcI+o=
+			+HEIPMx8FJqOxzH3ZKQS3k5Nlo/Ni6O5AcIFnvgyN+E=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TkKH0mc5OoHxT8r0CWolfDMsfDzQyX20IddLUUmp5Rw=
+			By9YZRFTWXT2p9jCJ9WtsSFOqXGvTiXe/bDNPyce3sg=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -123,14 +123,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AJWcq0gmpmkPykzKXZHwZeFsX37iXAzkeS6R5smDMTI=
+			ocv08akvtpCBKQdhtOjKo46wOXsZ+LvA7+F8SyPolcE=
 			</data>
 		</dict>
 		<key>Modules/Aztec.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yEhabVHmlUIdPYExUEe4lobWCuaT6HMMeQHhCBcGHDk=
+			i9t+tTWj1RATmgTnmBRX9VQHlAil3etgW1V9iZJ6wFo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

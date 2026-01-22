@@ -161,12 +161,7 @@ extension TiEditorEditorView {
   }
   
   static var tintedMissingImage: UIImage = {
-      if #available(iOS 13.0, *) {
-          return Gridicon.iconOfType(.image).withTintColor(.label)
-      } else {
-          // Fallback on earlier versions
-          return Gridicon.iconOfType(.image)
-      }
+      return .gridicon(.image).withTintColor(.label)
   }()
   
   struct Constants {
@@ -216,7 +211,7 @@ extension TiEditorEditorView {
           toolbar.dividerTintColor = .gray
       }
 
-      toolbar.overflowToggleIcon = Gridicon.iconOfType(.ellipsis)
+      toolbar.overflowToggleIcon = .gridicon(.ellipsis)
       toolbar.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44.0)
       toolbar.autoresizingMask = [ .flexibleHeight ]
       toolbar.formatter = self
@@ -461,9 +456,9 @@ extension FormattingIdentifier {
         }
     }
 
-    private func gridicon(_ gridiconType: GridiconType) -> UIImage {
+    private func gridicon(_ gridIconType: GridiconType) -> UIImage {
         let size = TiEditorEditorView.Constants.formatBarIconSize
-        return Gridicon.iconOfType(gridiconType, withSize: size)
+        return .gridicon(gridIconType, size: size)
     }
 
     var accessibilityIdentifier: String {

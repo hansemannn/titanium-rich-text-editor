@@ -14,4 +14,4 @@ FOUNDATION_EXPORT double TiEditorVersionNumber;
 //! Project version string for TiEditor.
 FOUNDATION_EXPORT const unsigned char TiEditorVersionString[];
 
-#import "TiEditorModuleAssets.h"
+#import <TiEditor/TiEditorModuleAssets.h>

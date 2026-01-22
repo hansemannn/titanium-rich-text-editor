@@ -1,0 +1,4 @@
+framework module WordPressEditor {
+  header "WordPressEditor-Swift.h"
+  requires objc
+}
